@@ -3,13 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { bubbleSort } from './components/sortingAlgorythm';
+import { RandomNumbersArray } from './randomGenerator';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <App 
+      sortFunc={bubbleSort}
+      arrayGenerator={RandomNumbersArray}
+    />
   </React.StrictMode>
 );
 
