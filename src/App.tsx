@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Header from './components/Header';
 import Graph from './components/Graph';
 import Management from './components/Management';
@@ -33,7 +32,6 @@ export default class App extends React.Component<Params, State> {
   readonly maxDelay: number = 1000
   readonly minArrayLength: number = 2
   readonly maxArrayLength: number = 50
-// napisać w app.tsx funkcje do zmiany parametrów latency arrayLength 
 
   constructor(params: Params) {
     super(params);
@@ -90,12 +88,12 @@ export default class App extends React.Component<Params, State> {
       }
     )
   } 
-  // obsługa przycisku random
+
   sort:React.MouseEventHandler<HTMLButtonElement> = event => {
     let responseState = this.sortFunc(this.state.numbers)
     this.setState(responseState)
   }
-  // sotowanie raz
+
   run: React.MouseEventHandler<HTMLButtonElement> = event => {
     const {numbers, inProcess} = this.state
     this.setState({inProcess: !inProcess})
@@ -119,7 +117,6 @@ export default class App extends React.Component<Params, State> {
         }
     }, this.latency)
   }
-  // sortowanie włącz wyłącz
 
   render() {
     return (

@@ -4,6 +4,13 @@
     --bg-color: #8BBEB2;
     --border-color: #4A6670;
 }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .bg-light {
   background-color: var(--bg-light);
   color: black;
@@ -91,4 +98,11 @@ button:hover {
   border-top-right-radius: 10px;
   flex-basis: 35px;
   margin: 2px
+}
+.App {
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

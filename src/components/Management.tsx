@@ -1,4 +1,4 @@
-type Params = {
+type ManagementParams = {
     latency: number;
     arrayLength: number;
     inProcess: boolean;
@@ -9,7 +9,7 @@ type Params = {
     sort: React.MouseEventHandler<HTMLButtonElement>
 }
 
-function Management(params: Params) {
+export default function Management(params: ManagementParams) {
     return (
         <div className='wrapper settings'>
             <div className='form'>
@@ -27,4 +27,3 @@ function Management(params: Params) {
         </div>
     )
 }
-export default Management
